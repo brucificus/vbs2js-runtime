@@ -2,7 +2,9 @@ import { IsDate } from '../src';
 
 describe('IsDate', () => {
     describe('given', () => {
+        // eslint-disable-next-line unicorn/consistent-function-scoping
         const expectIt = (value: any, expectedResult: boolean) => {
+            // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
             it(`${typeof value} "${value}"`, () => {
                 const actualResult = IsDate(value);
 

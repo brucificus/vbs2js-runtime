@@ -7,7 +7,9 @@ describe('DateAdd', () => {
             value1: Date | string,
             interval: string,
             expectedResult: number
+            // eslint-disable-next-line unicorn/consistent-function-scoping
         ) => {
+            // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
             it(`${typeof value2} "${value2}" - ${typeof value1} "${value1}" in ${interval}`, () => {
                 const actualResult = DateDiff(interval, value1, value2);
 

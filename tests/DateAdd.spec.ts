@@ -7,7 +7,9 @@ describe('DateAdd', () => {
             number: number,
             interval: string,
             expectedResult: Date | string | null | undefined
+            // eslint-disable-next-line unicorn/consistent-function-scoping
         ) => {
+            // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
             it(`${typeof value} "${value}" + ${number} '${interval}'`, () => {
                 const actualResult = DateAdd(interval, number, value);
 

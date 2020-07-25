@@ -6,7 +6,9 @@ describe('DatePart', () => {
             value: Date | string,
             interval: string,
             expectedResult: number
+            // eslint-disable-next-line unicorn/consistent-function-scoping
         ) => {
+            // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
             it(`${typeof value} "${value}"[${interval}]`, () => {
                 const actualResult = DatePart(interval, value);
 
