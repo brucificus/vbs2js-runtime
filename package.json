@@ -1,6 +1,6 @@
 {
   "name": "vbs2js-runtime",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "description": "This library provides compatibility helper methods for Classic ASP VBScript that has been converted to JScript.",
   "main": "lib/index.js",
   "files": [
