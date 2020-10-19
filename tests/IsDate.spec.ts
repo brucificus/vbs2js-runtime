@@ -9,8 +9,10 @@ describe('IsDate', () => {
                 const actualResult = IsDate(value);
 
                 if (expectedResult) {
+                    // eslint-disable-next-line jest/no-conditional-expect
                     expect(actualResult).toBeTruthy();
                 } else {
+                    // eslint-disable-next-line jest/no-conditional-expect
                     expect(actualResult).toBeFalsy();
                 }
             });
