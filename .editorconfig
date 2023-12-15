@@ -7,3 +7,9 @@ insert_final_newline = true
 
 [*.json]
 indent_size = 2
+
+[*.{j,t}s]
+indent_size = 4
+
+[*.y{a,}ml]
+indent_size = 2
