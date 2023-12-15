@@ -1,3 +1,5 @@
+import { DateLike } from './DateLike';
+
 /*
 Name: jsDate
 Desc: VBScript native Date functions emulated for Javascript
@@ -14,11 +16,9 @@ const vbUseSystem=0, vbFirstJan1=1, vbFirstFourDays=2, vbFirstFullWeek=3;	// Fir
 const MonthNames = [null,'January','February','March','April','May','June','July','August','September','October','November','December'];
 const WeekdayNames = [null,'Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 
-type DateLike = string | Date;
-
-
-function IsDate(p_Expression: DateLike): boolean {
+function IsDate(p_Expression: DateLike | null | undefined): boolean {
     if(p_Expression===null){return false;}
+    if(p_Expression===undefined){return false;}
     if(p_Expression instanceof Date) return true;
 	return !isNaN(Date.parse(p_Expression));		// <-- review further
 }

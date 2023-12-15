@@ -1,8 +1,11 @@
+// eslint-disable-next-line unicorn/prefer-module
 module.exports = {
     extends: ['./node_modules/commitlint-config-gitmoji'],
     parserPreset: {
         parserOpts: {
-            headerPattern: /^((:\w*:)|(([^\s\w{}]{1,2})[^\s\w{}]{0,4}))(?:\((.*?)\))?\s((?:.*(?=\())|.*)(?:\(#(\d*)\))?/,
+            headerPattern:
+                // eslint-disable-next-line unicorn/better-regex, optimize-regex/optimize-regex
+                /^((:\w*:)|(([^\w\s\p{P}]{1,2})(?:[^\w\s\p{P}]{0,4})))(?:\((.*?)\))?\s((?:.*(?=\())|.*)(?:\(#(\d*)\))?/,
             headerCorrespondence: ['type', 'scope', 'subject', 'ticket'],
         },
     },

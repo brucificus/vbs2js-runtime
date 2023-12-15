@@ -1,11 +1,11 @@
 import { CDate } from '../src';
+import { DateLike } from '../src/DateLike';
 
 describe('CDate', () => {
     describe('given', () => {
         const expectIt = (
-            value: any,
+            value: DateLike,
             expectedResult: Date | null | undefined
-            // eslint-disable-next-line unicorn/consistent-function-scoping
         ) => {
             // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
             it(`${typeof value} "${value}"`, () => {
