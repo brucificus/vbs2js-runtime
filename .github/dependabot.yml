@@ -1,0 +1,19 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "10:52"
+  open-pull-requests-limit: 10
+  versioning-strategy: increase-if-necessary
+  commit-message:
+    prefix: "⬆"
+- package-ecosystem: gitsubmodule
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "10:14"
+  open-pull-requests-limit: 10
+  commit-message:
+    prefix: "⬆"
