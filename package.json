@@ -53,7 +53,7 @@
     "husky": "^9.0.1",
     "jest": "^30.0.0",
     "prettier": "^3.1.1",
-    "semantic-release": "^25.0.1",
+    "semantic-release": "^26.0.1",
     "semantic-release-gitmoji": "^1.6.5",
     "ts-jest": "^29.1.1",
     "typescript": "^7.0.2"
